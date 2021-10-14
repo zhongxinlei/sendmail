@@ -1,0 +1,21 @@
+
+#配置 SMTP 服务器地址
+spring.mail.host: smtp.qq.com
+  #SMTP 服务器的端口
+spring.mail.port: 465
+  #配置邮箱用户名
+spring.mail.username: 59871255@qq.com
+  #配置密码，注意，不是真正的密码，而是刚刚申请到的授权码
+spring.mail.password: qwtgwfcsgpwmcagc
+  #默认的邮件编码
+spring.mail.default-encoding: UTF-8
+  #配饰 SSL 加密工厂
+spring.mail.properties.mail.smtp.socketFactoryClass: javax.net.ssl.SSLSocketFactory
+  #表示开启 DEBUG 模式，这样，邮件发送过程的日志会在控制台打印出来，方便排查错误
+spring.mail.properties.mail.debug: true
+
+  #官方建议使用 465 端口，而 465 端口是 SSL 协议的，所以不仅要换端口，
+  #还需要进行 SSL 协议替换。下面是在 application.properties 进行的邮件发送相关配置，
+spring.mail.protocol: smtp
+spring.mail.properties.mail.smtp.ssl.enable: true
+spring.mail.properties.mail.smtp.socketFactory.port: 465
