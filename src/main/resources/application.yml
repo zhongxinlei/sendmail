@@ -6,7 +6,7 @@ spring.mail.port: 465
   #配置邮箱用户名
 spring.mail.username: 59871255@qq.com
   #配置密码，注意，不是真正的密码，而是刚刚申请到的授权码
-spring.mail.password: qwtgwfcsgpwmcagc
+spring.mail.password: **************
   #默认的邮件编码
 spring.mail.default-encoding: UTF-8
   #配饰 SSL 加密工厂
